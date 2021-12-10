@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toDoList{
+   color: white;
+   text-align: center;
+   position: absolute;
+   left: 25%;
+}
+.toDoList, input{
+    border: none;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    flex-direction: row;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    color: tomato;
+    letter-spacing: 2px;
+    padding-left: 0px;
+}
+.addList{
+    border-radius: 10px;
+    background-color: green;
+    text-decoration: none;
+    border: 6px solid transparent;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.addList:hover{
+  background-color: red;
+}
+.myList{
+    color: red;
+    text-align: center;
+    position: absolute;
+    /* display: flex; */
+    left: 50%;
+    bottom: 70%;
+    text-decoration-style: solid;
+ }
+
+
+.cover .sideNav{
+    height: 80vh;
+    z-index: 10;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    background-color: #95D1CC;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.pageIcons{
+    padding-left: 30px;
+    position: absolute;
+    font-size: 50px;
+    border: 30px;
+    cursor: pointer;
+    bottom: 5%;
+}
+
+.fab{
+    padding: 10px;
+}
+.cover .sideNav a{
+    text-decoration: none;
+    font-size: 30px;
+    color: tomato;
+    display: block;
+    margin-left: 10px;
+    padding: 2px;
+    transition: transform .4s;
+}
+.cover .sideNav a:hover{
+    color: green;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, #2ac496, #795e36);
+}
+
+.cover{
+    z-index: 20;
+    border-radius: 10px;
+    width: 80%;
+    background: aquamarine;
+    min-height: 80vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7 ), rgba(255, 255, 255, 0.4));
+}
+.cover1, .cover2, .cover3, .cover4{
+    position: absolute;
+    background: aquamarine;
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7 ), rgba(255, 255, 255, 0.4));
+}
+
+.cover1{
+    top: 6%;
+    right: 30%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.cover2{
+    bottom: 20%;
+    left: 10%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.cover3{
+    top: 6%;
+    left: 30%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.cover4{
+    bottom: 20%;
+    right: 50%;
+    border-radius: 50%;
+    background-color: red;
+}
