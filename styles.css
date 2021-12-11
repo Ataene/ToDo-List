@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=PT+Serif:ital@1&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu&family=Ubuntu+Condensed&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@
     flex-direction: row;
 }
 h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 25px;
     padding: 10px;
@@ -38,13 +40,19 @@ h1{
   background-color: red;
 }
 .myList{
-    color: red;
-    text-align: center;
+    color: green;
     position: absolute;
-    /* display: flex; */
     left: 50%;
-    bottom: 70%;
-    text-decoration-style: solid;
+    top: 30%;
+ }
+ .myList p{
+     font-size: 30px;
+     font-weight: bold;
+     font-family: 'Ubuntu', sans-serif;
+     bottom: 30%;
+     cursor: pointer;
+     position: relative;
+     align-items: center;
  }
 
 

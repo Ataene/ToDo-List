@@ -1,18 +1,16 @@
+//Selecting all the butons and click events.
 const addList = document.querySelector(".addList");
-
 const myList = document.querySelector(".myList");
-
 const listInput = document.querySelector("#listInput");
-
 const aboutNav = document.querySelector("#about");
-
 const aboutConnect = document.querySelector("#connect");
 
 
 //add eventLister
 
-addList.addEventListener("click", function(){
-
+addList.addEventListener("click", eventSubmited);
+ function eventSubmited (){
+    //Created a new paragraph to catch user inputs
     const createParagraph = document.createElement("p");
 
     createParagraph.classList.add("myList");
@@ -31,9 +29,10 @@ addList.addEventListener("click", function(){
 
         myList.removeChild(createParagraph);
     })
-})
+}
 
-//addEventListener to sideNav.
+
+//addEventListener to sideNav on page Load.
 
 window.onload = showAbout;
 
@@ -54,12 +53,30 @@ aboutNav.addEventListener("click", function(){
         hideView.style.display = "none";
     }
 })
+//Add EventListers to diplace sideBar hidden text
 
 aboutConnect.addEventListener("click", function(){
 
     if(hideConnect.style.display === "none"){
+
         hideConnect.style.display = "block";
+
     } else{
+
         hideConnect.style.display = "none";
+    }
+})
+
+//Implete the enter keys on key press event.
+
+listInput.addEventListener("keyup", function(event){
+
+    if(event.keyCode === 13) {
+
+        event.preventDefault();
+
+        eventSubmited();
+    }else{
+        console.log("Please press the key");
     }
 })
